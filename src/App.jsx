@@ -1,12 +1,15 @@
 import "./App.css";
-
+import Random from "./components/Random";
+import Tag from "./components/Tag";
 function App() {
   return (
-    <main className="flex justify-center gap-4 flex-col min-h-screen">
-      <h1 className="text-3xl text-center font-bold underline">React & Tailwind CSS Starter Pack</h1>
-      <p className="text-center text-xl">This is a starter pack for React & Tailwind CSS projects.</p>
-      <img src="https://bit.ly/3wsmzTy" alt="meme" className="mx-auto" />
-    </main>
+    <div className="w-full h-screen relative flex flex-col background overflow-x-hidden items-center">
+      <h1 className=" bg-white rounded-sm w-11/12 text-center mt-[40px] ml-[25px] mr-[25px] px-10 py-2 text-2xl font-bold mx-auto">RANDOM GIFS</h1>
+      <div className="flex flex-col w-full items-center mt-[30px]">
+        <Random/>
+        <Tag/>
+      </div>
+    </div>
   );
 }
 
